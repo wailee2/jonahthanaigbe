@@ -19,14 +19,13 @@
 body {
     background-color: white;
     color: var(--black);
-    padding-top: 80px;
     font-size: 15px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 80px 0 1rem 0;
 }
 
 h1, h2, h3{
@@ -38,7 +37,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--white);
+    background-color: #d8d8d5f3;
     z-index: 1000;
     transition: transform 0.3s ease;
     padding: 20px 5%;
