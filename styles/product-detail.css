@@ -209,9 +209,7 @@
         flex-direction: column;
     }
     .art-image {
-        min-widbth: none;
-        max-width: none;
-        
+        max-width: none; 
     }
     
 }
