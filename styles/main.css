@@ -125,6 +125,14 @@ header.hide {
     z-index: 2001;
 }
 
+.search-icon{
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.search-icon:hover{
+    color: var(--black);
+}
 
 .add-to-cart {
     cursor: pointer;
@@ -149,9 +157,15 @@ header.hide {
     position: relative;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease;
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.cart-icon:hover{
+    background-color: var(--black);
+    color: white;
 }
 
 .cart-count {
