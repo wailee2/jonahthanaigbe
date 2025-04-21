@@ -579,10 +579,12 @@ footer {
 .footerend{
     margin-top: 5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: #aaa;
     font-size: 12px;
+    gap: 1rem;
+    flex-wrap: wrap;
     a{
         color: var(--white);
         text-decoration: none;
@@ -732,6 +734,9 @@ select, button {
     }
     .about p{
         font: 1.5rem;
+    }
+    .footerend{
+        justify-content: space-between;
     }
 }
 
