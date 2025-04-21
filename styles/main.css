@@ -127,18 +127,13 @@ header.hide {
 
 
 .add-to-cart {
-    background-color: var(--orange);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
     cursor: pointer;
-    width: 100%;
     transition: background-color 0.3s;
 }
 
 .add-to-cart:hover {
     background-color: var(--black);
+    color: var(--white);
 }
 
 .cart-icon-container{
@@ -661,7 +656,7 @@ select, button {
 }
 
 .art-price {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--secondary-color);
     margin-bottom: 1rem;
 }
