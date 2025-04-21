@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>j</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@600&display=swap"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Lavishly+Yours&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <a href="index.html" class="logo">jona</a>
+        
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+        
+        <div class="header-icons">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Gallery</a>
+        <a href="#">Contact</a>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+    </div>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+            <div class="empty-cart">Your cart is empty</div>
+        </div>
+        <div class="cart-total">
+            Total: $0.00
+        </div>
+        <button class="checkout-btn" onclick="checkout()">
+            <i class="fab fa-whatsapp"></i> Place Order via WhatsApp
+        </button>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="name">
+                <span>Hello! I'm</span>
+                <h1>Jonathan Aigbe</h1>
+            </div>
+            <img src="images/about.jpg" alt="about">
+            <div class="title">
+                <span>A creative</span>
+                <h1>Artist</h1>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I'm Jonathan Aigbe, a contemporary visual artist inspired by the rhythm of modern existence. My work explores emotion, memory, and space using mixed media, texture, and abstract expression.
+            </p>
+            <p>
+                Each piece I create is a story—told through shape, color, and contradiction. My art is meant to evoke thought, challenge perception, and invite connection.
+            </p>
+            <a href="products.html" class="btn">View Gallery</a>
+        </div>
+        
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2 class="section-title">Featured Works</h2>
+        <div class="gallery-container">
+            <div class="gallery-scroll" id="gallery-scroll">
+                <div class="gallery-item">
+                    <img src="./images/featured/20240902_133041.jpg" alt="Artwork 1">
+                    <div class="gallery-item-info">
+                        <h3>Urban Dreams</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/featured/20240902_134256.jpg" alt="Artwork 2">
+                    <div class="gallery-item-info">
+                        <h3>Abstract Thoughts</h3>
+                        <p>Painting</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/featured/20240902_162506.jpg" alt="Artwork 3">
+                    <div class="gallery-item-info">
+                        <h3>Colorful Chaos</h3>
+                        <p>Mixed Media</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/featured/20240905_144423.jpg" alt="Artwork 4">
+                    <div class="gallery-item-info">
+                        <h3>Minimalist Beauty</h3>
+                        <p>Digital Art</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Artwork 5">
+                    <div class="gallery-item-info">
+                        <h3>Textured Layers</h3>
+                        <p>Sculpture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="products.html">Gallery</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <div class="footerend">
+                <p class="copyright">© 2025 Jonathan Aigbe. All rights reserved.</p>
+                <p class="wailee">Made with heart - <a href="https://wa.me/2348119684024">Wailee</a>
+                </p>
+            </div>
+            
+        </div>
+    </footer>
+    
+    <script src="scripts/main.js"></script> <!-- For index.html -->
+
+</body>
