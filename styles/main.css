@@ -74,6 +74,10 @@ header.hide {
     color: #777;
 }
 
+.nav-links a.active {
+    color: black;
+}
+
 .header-icons {
     display: flex;
     gap: 20px;
@@ -443,6 +447,24 @@ header.hide {
 
 .btn:hover {
     background-color: var(--black);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: var(--orange);
+    color: var(--white);
     transform: translateY(-2px);
 }
 
