@@ -443,6 +443,7 @@ header.hide {
     border-radius: 30px;
     font-weight: 500;
     transition: all 0.3s;
+    margin: 0 auto;
 }
 
 .btn:hover {
