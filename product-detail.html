@@ -54,7 +54,7 @@
             <div class="empty-cart">Your cart is empty</div>
         </div>
         <div class="cart-total">
-            Total: $0.00
+            Total: ₦0.00
         </div>
         <button class="checkout-btn" onclick="checkout()">
             <i class="fab fa-whatsapp"></i> Place Order via WhatsApp
@@ -94,7 +94,7 @@
                 <img src="${art.image}" alt="${art.title}" class="art-image">
                 <div class="art-info">
                     <h1 class="art-title">${art.title}</h1>
-                    <p class="art-price">$${art.price.toFixed(2)}</p>
+                    <p class="art-price">₦${art.price.toFixed(2)}</p>
                     <p class="art-description">${art.description}</p>
                     
                     <div class="art-meta">
@@ -118,6 +118,7 @@
                     
                     <button class="add-to-cart" onclick="addToCart(${art.id})">Add to Cart</button>
                     <a href="products.html" class="back-to-gallery">Back to Gallery</a>
+
                 </div>
             `;
         }

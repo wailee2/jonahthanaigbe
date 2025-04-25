@@ -99,10 +99,10 @@
                 <label for="price-range">Price Range</label>
                 <select id="price-range" onchange="filterByPrice()">
                     <option value="all">All Prices</option>
-                    <option value="0-100">Under $100</option>
-                    <option value="100-500">$100 - $500</option>
-                    <option value="500-1000">$500 - $1000</option>
-                    <option value="1000+">Over $1000</option>
+                    <option value="0-20000">Under ₦20000</option>
+                    <option value="10000-50000">₦20000 - ₦50000</option>
+                    <option value="50000-100000">₦50000 - ₦10000</option>
+                    <option value="100000">Over ₦100000</option>
                 </select>
             </div>
         </div>
@@ -117,36 +117,36 @@
         const artData = [
             {
                 id: 1,
-                title: "Sunset Over Mountains",
-                price: 350,
+                title: "Yanga",
+                price: 70000,
                 type: "painting",
-                image: "./images/featured/20240905_144423.jpg",
-                description: "Beautiful oil painting of a mountain sunset with vibrant colors.",
-                date: "2023-05-15",
-                size: "24x36 inches",
-                medium: "Oil on canvas"
+                image: "./images/products/product01.jpg",
+                description: "In Nigerian Pidgin, 'Yanga' means to 'show off'. This piece celebrates the effortless grace and confidence of African women, whose elegance is expressed not just in what they wear, but in how they move. With bold colors and fluid lines, this painting captures the sway of well-rounded hips and the subtle pride in everyday beauty",
+                date: "2022",
+                size: "36.1 x 50.8cm",
+                medium: "Pastel on paper"
             },
             {
                 id: 2,
-                title: "Urban Life",
-                price: 150,
-                type: "photography",
-                image: "./images/featured/20240902_162506.jpg",
-                description: "Black and white photograph capturing the essence of city life.",
-                date: "2023-02-20",
-                size: "16x20 inches",
-                medium: "Archival print"
+                title: "Nne",
+                price: 65000,
+                type: "painting",
+                image: "./images/products/product02.jpg",
+                description: "This painting is inspired by mothers everywhere—their love, care, and dedication to raising and nurturing their children into adulthood. A quiet tribute to the beauty of motherhood.",
+                date: "2022",
+                size: "35.6 x 48.3cm",
+                medium: "Pastels on paper"
             },
             {
                 id: 3,
-                title: "Abstract Thoughts",
-                price: 450,
+                title: "Holy Kiss",
+                price: 80000,
                 type: "painting",
-                image: "./images/featured/20240902_134256.jpg",
-                description: "Colorful abstract painting representing deep thoughts and emotions.",
-                date: "2023-07-10",
-                size: "30x30 inches",
-                medium: "Acrylic on canvas"
+                image: "./images/products/product03.jpg",
+                description: "A semi-abstract portrayal of two figures in a tender embrace, inspired by love and its sacredness. Subtle African elements like beads and loop earrings highlight the cultural essence woven into this intimate moment.",
+                date: "2022-01-01",
+                size: "31.7 x 48.3",
+                medium: "Pastels on paper"
             },
             {
                 id: 4,
@@ -230,7 +230,7 @@
                     <img src="${item.image}" alt="${item.title}" class="art-image" onclick="viewArtDetail(${item.id})">
                     <div class="art-info">
                         <h3 class="art-title">${item.title}</h3>
-                        <p class="art-price">$${item.price.toFixed(2)}</p>
+                        <p class="art-price">₦${item.price.toFixed(2)}</p>
                         <button class="add-to-cart" onclick="addToCart(${item.id}, event)">Add to Cart</button>
                     </div>
                 `;
